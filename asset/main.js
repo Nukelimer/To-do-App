@@ -59,7 +59,7 @@ async function getQuote(URL) {
 
 deleteAll.addEventListener('click', () => {
   itemsList.remove();
-  localStorage.removeItem('taskItems');
+  localStorage.clear();
 });
 
 submit.addEventListener('submit', getInputTextHandler);
