@@ -1,0 +1,113 @@
+html {
+  box-sizing: border-box;
+ background: rgb(42, 41, 41);
+}
+body{
+  height: 100vh
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.container{
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  
+  
+}
+.wrapper {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 0 5px rgba(205, 203, 203, 0.1);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.3em .3em;
+ 
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+  font-weight: 200;
+}
+.quote{
+  display: none;
+  background: #605e5e1a;
+  border-radius: 3px;
+  padding: 0.3em 0.5em;
+  margin-bottom: 2em;
+}
+.show{
+  display: block;
+}
+.tasks {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+}
+
+.tasks li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  font-weight: 100;
+  display: flex;
+}
+
+.tasks label {
+  flex: 1;
+  cursor: pointer;
+}
+
+.tasks input {
+  display: none;
+}
+
+.tasks input + label:before {
+  content: '⌛';
+  margin-right: 10px;
+}
+
+.tasks input:checked + label:before {
+  content: '✅';
+}
+.check-all{
+  content: '✅' !important;
+  content: '⌛';
+
+}
+.add-items {
+  margin-top: 20px;
+}
+
+.add-items input {
+  padding: 10px;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn{
+  margin-top: 1.4em;
+  display: flex;
+ 
+
+}
+.btn button{
+  padding: 0.4em 0.8em;
+  margin-left: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  
+}
+.btn > :first-child{
+  margin-left: 0em;
+}
